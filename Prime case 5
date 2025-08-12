@@ -1,0 +1,25 @@
+package lab;
+
+public class Prime {
+	public static void main(String[] args) {
+		int number=0;
+		int isprime=1;
+		if(number<=1) {
+			isprime=0;
+		}else {
+			for(int i=2;i<=Math.sqrt(number);i++) {
+				if(number%i==0) {
+					isprime=0;
+					break;
+				}
+			}
+		}
+		if(isprime==1) {
+			System.out.println("prime");
+		}else {
+			System.out.println("not prime");
+		}
+		
+	}
+
+}
